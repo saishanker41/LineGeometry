@@ -38,7 +38,18 @@ public class LineComparisonComputaion {
       String s1, s2;
       s1 = Double.toString(distance1);
       s2 = Double.toString(distance2);
-      System.out.println(distance1.equals(distance2));
+      System.out.println(s1.equals(s2));
+      int comp = s1.compareTo(s2);
+      if(comp > 0) {
+            System.out.println("distance1 is higher than distance2");
 
+      }
+      if(comp == 0) {
+            System.out.println("distance1 and distance2 values are same");
+
+      }
+      if(comp < 0) {
+            System.out.println("distance1 is smaller than distance2");
+      }
    }
 }
